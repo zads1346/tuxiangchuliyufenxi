@@ -1,0 +1,10 @@
+{
+  "dice": 0.9108330414429834,
+  "iou": 0.8545374569679394,
+  "n": 3662,
+  "best_epoch": 5,
+  "best_val_dice": 0.9119982526846271,
+  "seconds_training_and_eval": 869.2149688999998,
+  "threshold": 0.5,
+  "metric_aggregation": "mean of per-image scores on valid pixels, 256x256 masks, label 3 ignored"
+}

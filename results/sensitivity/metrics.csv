@@ -1,0 +1,5 @@
+variant,subset,n,dice,iou
+baseline,official_valid_subset,3662,0.9108330414429834,0.8545374569679394
+baseline,after_near_duplicate_exclusion,3639,0.9105662901269042,0.8541379051249176
+augmented,official_valid_subset,3662,0.9070618460708535,0.8491358508006858
+augmented,after_near_duplicate_exclusion,3639,0.9068193926207343,0.8487725999387883

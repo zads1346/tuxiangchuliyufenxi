@@ -1,0 +1,96 @@
+{
+  "checkpoint": "runs\\baseline\\best.pt",
+  "checkpoint_sha256": "d9041b008e1e95e3a0f29bbf19262a6735bd953a9c1994bcc513bab4fb2a69b6",
+  "device": "cuda",
+  "image_size": 256,
+  "prediction_threshold": 0.5,
+  "candidate_minimum_areas": [
+    0,
+    16,
+    64,
+    256,
+    1024
+  ],
+  "selection": {
+    "tta_without_filter": {
+      "n": 366,
+      "dice": 0.9160429898414436,
+      "iou": 0.8618071895194509
+    },
+    "thresholds": {
+      "0": {
+        "n": 366,
+        "dice": 0.9160429898414436,
+        "iou": 0.8618071895194509
+      },
+      "16": {
+        "n": 366,
+        "dice": 0.9160453644003017,
+        "iou": 0.8618111114103513
+      },
+      "64": {
+        "n": 366,
+        "dice": 0.9160795990277065,
+        "iou": 0.8618578382571571
+      },
+      "256": {
+        "n": 366,
+        "dice": 0.9162677160734093,
+        "iou": 0.8622057309352796
+      },
+      "1024": {
+        "n": 366,
+        "dice": 0.9162613385920956,
+        "iou": 0.8623651894172599
+      }
+    },
+    "chosen_minimum_area_pixels": 256,
+    "rule": "maximum validation mean Dice; tie -> smaller threshold"
+  },
+  "method": "TTA = average of original probability and horizontally flipped-input prediction flipped back; component filter removes 8-connected foreground components smaller than selected size.",
+  "metrics": "per-image mean on valid pixels; original trimap label 3 ignored; filter operates on full prediction before metric masking",
+  "test": {
+    "baseline": {
+      "n": 3662,
+      "dice": 0.9108330412216438,
+      "iou": 0.8545374567969007
+    },
+    "tta": {
+      "n": 3662,
+      "dice": 0.915008267430238,
+      "iou": 0.8611871463440436
+    },
+    "tta_components": {
+      "n": 3662,
+      "dice": 0.9150012975161919,
+      "iou": 0.8613038709648979
+    }
+  },
+  "test_without_reviewed_duplicates": {
+    "baseline": {
+      "n": 3639,
+      "dice": 0.9105662899112021,
+      "iou": 0.8541379049497542
+    },
+    "tta": {
+      "n": 3639,
+      "dice": 0.9147568764388436,
+      "iou": 0.8608049570202568
+    },
+    "tta_components": {
+      "n": 3639,
+      "dice": 0.9147498151299159,
+      "iou": 0.8609223666865474
+    }
+  },
+  "excluded_reviewed_duplicate_test_images": 23,
+  "elapsed_seconds": 121.33278900000005,
+  "fixed_examples": [
+    "Abyssinian_201",
+    "Birman_20",
+    "english_cocker_spaniel_45",
+    "keeshond_56",
+    "pomeranian_68",
+    "scottish_terrier_7"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "method": "Image-only cross-split dHash candidate review; exclude manually confirmed near-duplicate test IDs from evaluation only; no retraining.",
+  "exclude_source": "data/duplicate_test_ids.json",
+  "review_source": "data/cross_split_dhash_review.json",
+  "excluded_test_ids": [
+    "Bombay_82",
+    "British_Shorthair_278",
+    "British_Shorthair_271",
+    "german_shorthaired_3",
+    "german_shorthaired_19",
+    "german_shorthaired_20",
+    "great_pyrenees_89",
+    "japanese_chin_85",
+    "japanese_chin_88",
+    "japanese_chin_81",
+    "japanese_chin_20",
+    "japanese_chin_200",
+    "japanese_chin_78",
+    "keeshond_97",
+    "keeshond_47",
+    "keeshond_99",
+    "keeshond_27",
+    "leonberger_1",
+    "leonberger_2",
+    "newfoundland_2",
+    "Abyssinian_99",
+    "Egyptian_Mau_219",
+    "Egyptian_Mau_6"
+  ],
+  "n_excluded": 23,
+  "limitations": "dHash is non-invariant to cropping, reflection, and strong transformations; may miss same animal or similar photos and may produce false positives. Review verifies candidate photos, not animal identity.",
+  "results": {
+    "baseline": {
+      "official_valid_subset": {
+        "n": 3662,
+        "dice": 0.9108330414429834,
+        "iou": 0.8545374569679394
+      },
+      "after_near_duplicate_exclusion": {
+        "n": 3639,
+        "dice": 0.9105662901269042,
+        "iou": 0.8541379051249176
+      },
+      "delta_excluded_minus_original": {
+        "dice": -0.00026675131607922786,
+        "iou": -0.0003995518430217615
+      }
+    },
+    "augmented": {
+      "official_valid_subset": {
+        "n": 3662,
+        "dice": 0.9070618460708535,
+        "iou": 0.8491358508006858
+      },
+      "after_near_duplicate_exclusion": {
+        "n": 3639,
+        "dice": 0.9068193926207343,
+        "iou": 0.8487725999387883
+      },
+      "delta_excluded_minus_original": {
+        "dice": -0.0002424534501191955,
+        "iou": -0.00036325086189747946
+      }
+    }
+  }
+}

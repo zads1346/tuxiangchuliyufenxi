@@ -1,0 +1,30 @@
+{
+  "method": "visual review of cross-split dHash candidates; images only",
+  "test_ids": [
+    "Bombay_82",
+    "British_Shorthair_278",
+    "British_Shorthair_271",
+    "german_shorthaired_3",
+    "german_shorthaired_19",
+    "german_shorthaired_20",
+    "great_pyrenees_89",
+    "japanese_chin_85",
+    "japanese_chin_88",
+    "japanese_chin_81",
+    "japanese_chin_20",
+    "japanese_chin_200",
+    "japanese_chin_78",
+    "keeshond_97",
+    "keeshond_47",
+    "keeshond_99",
+    "keeshond_27",
+    "leonberger_1",
+    "leonberger_2",
+    "newfoundland_2",
+    "Abyssinian_99",
+    "Egyptian_Mau_219",
+    "Egyptian_Mau_6"
+  ],
+  "n": 23,
+  "official_split_unchanged": true
+}

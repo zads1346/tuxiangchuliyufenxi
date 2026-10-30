@@ -1,0 +1,184 @@
+{
+  "method": "64-bit dHash grayscale, 9x8 LANCZOS, bit compares right > left, Hamming distance",
+  "candidate_threshold_max_distance": 5,
+  "counts": {
+    "trainval": 3673,
+    "test": 3662,
+    "candidate_pairs": 24,
+    "near_duplicates": 23,
+    "different_photo": 1
+  },
+  "visual_review": "Two contact sheets contain every candidate; reviewer visually examined all pairs; first 23 appear visually near-identical, final one is different.",
+  "basis": "Image-only scan, no model output or prediction used",
+  "limitations": "dHash is non-invariant to cropping, reflection, and strong transformations; may miss same animal or similar photos and may produce false positives. Review verifies candidate photos, not animal identity.",
+  "pairs": [
+    {
+      "trainval": "Bombay_146",
+      "test": "Bombay_82",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "British_Shorthair_160",
+      "test": "British_Shorthair_278",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "British_Shorthair_186",
+      "test": "British_Shorthair_271",
+      "distance": 0,
+      "trainval_subset": "val",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "german_shorthaired_150",
+      "test": "german_shorthaired_3",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "german_shorthaired_179",
+      "test": "german_shorthaired_19",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "german_shorthaired_180",
+      "test": "german_shorthaired_20",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "great_pyrenees_173",
+      "test": "great_pyrenees_89",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_137",
+      "test": "japanese_chin_85",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_140",
+      "test": "japanese_chin_88",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_158",
+      "test": "japanese_chin_81",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_176",
+      "test": "japanese_chin_20",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_187",
+      "test": "japanese_chin_200",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "japanese_chin_188",
+      "test": "japanese_chin_78",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "keeshond_140",
+      "test": "keeshond_97",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "keeshond_141",
+      "test": "keeshond_47",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "keeshond_152",
+      "test": "keeshond_99",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "keeshond_175",
+      "test": "keeshond_27",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "leonberger_187",
+      "test": "leonberger_1",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "leonberger_189",
+      "test": "leonberger_2",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "newfoundland_149",
+      "test": "newfoundland_2",
+      "distance": 0,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "Abyssinian_151",
+      "test": "Abyssinian_99",
+      "distance": 1,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "Egyptian_Mau_138",
+      "test": "Egyptian_Mau_219",
+      "distance": 1,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "Egyptian_Mau_186",
+      "test": "Egyptian_Mau_6",
+      "distance": 1,
+      "trainval_subset": "train",
+      "review": "near_duplicate"
+    },
+    {
+      "trainval": "Siamese_174",
+      "test": "Egyptian_Mau_53",
+      "distance": 5,
+      "trainval_subset": "train",
+      "review": "different_photo"
+    }
+  ]
+}

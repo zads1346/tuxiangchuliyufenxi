@@ -1,0 +1,93 @@
+{
+  "dataset": "Oxford-IIIT Pet",
+  "official_source": "https://www.robots.ox.ac.uk/~vgg/data/pets/",
+  "source_archives": [
+    "https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz",
+    "https://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz"
+  ],
+  "archive_sha256": {
+    "images.tar.gz": "67195c5e1c01f1ab5f9b6a5d22b8c27a580d896ece458917e61d459337fa318d",
+    "annotations.tar.gz": "52425fb6de5c424942b7626b428656fcbd798db970a937df61750c0f1d358e91"
+  },
+  "usage": "Research purposes only; original websites terms apply, per dataset README.",
+  "counts": {
+    "train": 3311,
+    "val": 369,
+    "test": 3669
+  },
+  "breed_count": 37,
+  "mask_label_image_counts": {
+    "1": 7335,
+    "2": 7349,
+    "3": 7335
+  },
+  "mask_legend": "1 foreground, 2 background, 3 not classified",
+  "invalid_or_mismatch": [],
+  "exact_duplicates": [],
+  "cross_split_exact_duplicates": [],
+  "note": "Exact duplicate check cannot exclude near-duplicates or same animal across split.",
+  "empty_masks": [
+    {
+      "split": "train",
+      "id": "Egyptian_Mau_196"
+    },
+    {
+      "split": "train",
+      "id": "Egyptian_Mau_162"
+    },
+    {
+      "split": "train",
+      "id": "leonberger_18"
+    },
+    {
+      "split": "train",
+      "id": "saint_bernard_15"
+    },
+    {
+      "split": "val",
+      "id": "Egyptian_Mau_165"
+    },
+    {
+      "split": "val",
+      "id": "miniature_pinscher_14"
+    },
+    {
+      "split": "val",
+      "id": "saint_bernard_108"
+    },
+    {
+      "split": "test",
+      "id": "Egyptian_Mau_20"
+    },
+    {
+      "split": "test",
+      "id": "japanese_chin_199"
+    },
+    {
+      "split": "test",
+      "id": "keeshond_7"
+    },
+    {
+      "split": "test",
+      "id": "Persian_259"
+    },
+    {
+      "split": "test",
+      "id": "saint_bernard_60"
+    },
+    {
+      "split": "test",
+      "id": "saint_bernard_78"
+    },
+    {
+      "split": "test",
+      "id": "wheaten_terrier_195"
+    }
+  ],
+  "empty_mask_note": "All-background annotations; corresponding images visually reviewed and contain visible pets. Excluded from segmentation experiments.",
+  "valid_counts": {
+    "train": 3307,
+    "val": 366,
+    "test": 3662
+  }
+}
